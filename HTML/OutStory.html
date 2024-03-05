@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Our Story | Wonder</title>
+      <link rel="icon" href="../Image/logo.jpg" />
+      <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+      <link rel="stylesheet" href="../CSS/slick.css" />
+      <link rel="stylesheet" href="../CSS/Outstory.css" />
+      <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css" />
+      <link
+         rel="stylesheet"
+         href="../icon/fontawesome-free-6.1.1-web/css/all.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../icon/fontawesome-free-6.1.1-web/css/all.min.css"
+      />
+   </head>
+
+   <body>
+      <div class="container-fluid header" id="header">
+         <div class="container-fluid text-center">
+            <div class="brand-name pb-3 fw-bold">Wonder</div>
+         </div>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+               >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a
+                           href="index.html"
+                           class="nav-link nav-link-item mx-3"
+                        >
+                           home
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <div class="btn-group">
+                           <a
+                              href=""
+                              class="nav-link nav-link-item mx-3 dropdown-toggle"
+                              id="navbarDropdown"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              all collection
+                              <i class="fa-solid fa-angle-down"></i>
+                           </a>
+                           <div class="dropdown-menu row" id="sub-menu">
+                              <div class="dropdown-item">
+                                 <a href="ShopAll.html">New</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="ShopAll.html">Best Seller</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="ShopAll.html">Limited Edition</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="ShopAll.html">Secret Garden</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="ShopAll.html">Core Collection</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <div class="btn-group">
+                           <a
+                              href=""
+                              class="nav-link nav-link-item mx-3 dropdown-toggle"
+                              id="navbarDropdown"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >gift
+                              <i class="fa-solid fa-angle-down"></i>
+                           </a>
+                           <div class="dropdown-menu row" id="sub-menu">
+                              <div class="dropdown-item">
+                                 <a href="gift.html">About Gift</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="gift-card.html">Gift Card</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="e-giftcard.html">E-Gift Card</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <div class="btn-group">
+                           <a
+                              href=""
+                              class="nav-link nav-link-item mx-3 dropdown-toggle"
+                              id="navbarDropdown"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >about us
+                              <i class="fa-solid fa-angle-down"></i>
+                           </a>
+                           <div class="dropdown-menu row" id="sub-menu">
+                              <div class="dropdown-item">
+                                 <a href="OutStory.html">Our Story</a>
+                              </div>
+                              <div class="dropdown-item">
+                                 <a href="OutStory.html#our-team">Our Team</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="d-flex justify-content-between user-cart-search">
+                     <form class="search-form">
+                        <input
+                           class=""
+                           type="text"
+                           name=""
+                           id=""
+                           placeholder="I'm searching for ..."
+                           style="margin-left: 15px"
+                        />
+                        <span></span>
+                     </form>
+                     <div class="link-wrapper">
+                        <a class="rainbow border-0 mx-2" onclick="test()"
+                           ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                        <a href="Signin.html" class="user mx-2 rainbow"
+                           ><i class="fa-solid fa-user"></i
+                        ></a>
+                        <a
+                           class="cart mx-2 rainbow"
+                           data-micromodal-trigger="modal-1"
+                           ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div
+               class="modal__container"
+               role="dialog"
+               aria-modal="true"
+               aria-labelledby="modal-1-title"
+            >
+               <header class="modal__header">
+                  <h2
+                     class="modal__title text-center font-family text-capitalize"
+                     id="modal-1-title"
+                     style="color: #6e6c6b"
+                  >
+                     your cart
+                  </h2>
+                  <button
+                     class="modal__close"
+                     aria-label="Close modal"
+                     data-micromodal-close
+                  ></button>
+               </header>
+               <hr />
+               <main class="modal__content" id="modal-1-content">
+                  <div class="container-fluid font-family text-dark">
+                     <div
+                        class="container d-flex flex-lg-row flex-column justify-content-between"
+                     >
+                        <img
+                           src="../products/ASH MAGNUM/Candle-Magnum_Black_Core-Ash_V1-CROP_Shad2FX1.png "
+                           alt=" "
+                           class="img-fluid"
+                           style="width: 150px"
+                        />
+                        <div class="infor" style="margin-top: 50px">
+                           <p>Name: LES</p>
+                           <p>Quantity: 1</p>
+                        </div>
+                     </div>
+                     <p class="text-center">Price: $36.00</p>
+                  </div>
+                  <hr />
+                  <p class="text-center fs-4 font-family">subtotal: $436.00</p>
+                  <hr />
+               </main>
+               <footer class="modal__footer d-flex justify-content-between">
+                  <a
+                     href="checkout.html"
+                     class="font-family text-uppercase mouse-gray-font"
+                     style="border: 1px solid black"
+                     ><button class="modal__btn modal__btn__effect">
+                        CheckOut
+                     </button></a
+                  >
+                  <a
+                     href="Cart.html"
+                     class="font-family text-uppercase mouse-gray-font hvr-grow"
+                     style="border: 1px solid black"
+                     ><button class="modal__btn">View Cart</button></a
+                  >
+               </footer>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid" style="padding: 0 !important">
+         <video autoplay muted width="100%">
+            <source src="../Video/Homesick_FILM_FULL.mp4" />
+         </video>
+         <div
+            class="container-fluid header-content d-flex justify-content-center bg-black"
+         >
+            <p
+               class="our-story text-center w-50 fs-4 my-5 white-font font-family-Montserrat text-capitalize"
+            >
+               Founded in 2021, Wonder is a home fragrance and lifestyle brand
+               with one simple goal: to bring joy to your home by helping you
+               feel closer to the people, places and moments that matter most.
+            </p>
+         </div>
+         <div class="container-fluid header-body-section">
+            <h1
+               class="text-center w-100 mouse-gray-font font-family-Montserrat text-capitalize my-5"
+            >
+               We make the world a brighter, <br />
+               happier place through the power of fragrance.
+            </h1>
+         </div>
+         <div class="content-section container-fluid w-75">
+            <img
+               src="../Image/banner1.jpg"
+               alt=""
+               class="img-fluid my-5"
+               width="100%"
+            />
+            <h2
+               class="p-1 text-center text-capitalize mouse-gray-font font-family-Montserrat fs-1"
+            >
+               Our Story
+            </h2>
+            <div class="container-fluid font-family p-3">
+               <p>
+                  Welcome to WONDER, where mood is elevated and scent is
+                  celebrated. Our fragranced home, perfume, personal care,
+                  wellness, and technology collections transform the everyday
+                  through scents that transport, inspire and captivate the
+                  senses. Recognized by the fragrance industry as a gamechanger,
+                  our company has a unique approach to fragrance, artfully
+                  blending notes of the familiar, the exotic, and the unexpected
+                  for a fragrance experience like no other. Let WONDER scent
+                  your world. Have you ever noticed that candles make everything
+                  better? We totally agree. Yet we kept finding ourselves
+                  settling for candles that all looked the same and were too
+                  expensive to light every day. So we spent a year testing
+                  hundreds of fragrances, mixing waxes, experimenting with
+                  wicks, and accidently starting a few small fires in our
+                  kitchen to create the kind of candles we’d been searching for
+               </p>
+            </div>
+            <img
+               src="../Image/banner-hero-about-ingredients.jpg"
+               alt=""
+               class="img-fluid my-5"
+            />
+            <h2
+               class="p-1 text-center text-capitalize mouse-gray-font font-family-Montserrat fs-1"
+            >
+               Our Ingredients
+            </h2>
+
+            <div class="container-fluid font-family p-3">
+               <p class="text-center w-100" style="margin: 0 auto">
+                  We only use pure ingredients to provide you with the highest
+                  quality experience. From our solid soy wax and essential oil
+                  fragrances, to the hypoallergenic and vegan body care, each
+                  ingredient is thoughtfully blended to deliver natural luxury
+                  with pure purpose straight to your hands.
+               </p>
+               <table
+                  class="table w-75 table-borderless my-5"
+                  style="margin: 0 auto"
+               >
+                  <tbody>
+                     <tr>
+                        <td class="pe-5">
+                           <img
+                              src="../Image/img-our-ingredients-content-1.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                        </td>
+                        <td>
+                           <h3
+                              class="text-start text-capitalize mouse-gray-font font-family-Montserrat"
+                           >
+                              Soy Wax
+                           </h3>
+                           <p>
+                              We use a soy wax because it is a renewable, <br />
+                              biodegradable, non-toxic and carbon neutral
+                              resource. <br />
+                              Our wax releases fragrance gradually due to the
+                              pure <br />
+                              and slow burn characterized by solid soy wax.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="pe-5">
+                           <h3
+                              class="text-start text-capitalize mouse-gray-font font-family-Montserrat"
+                           >
+                              Fragrance
+                           </h3>
+                           <p>
+                              We use refined and pure essential oil <br />
+                              based fragrances to deliver a natural and <br />
+                              true scent. Our fragrance blends are free <br />
+                              of dyes, propellants and other synthetic <br />
+                              ingredients. The highly concentrated <br />
+                              quality of our fragrances alone provide a <br />
+                              long-lasting scent.
+                           </p>
+                        </td>
+                        <td>
+                           <img
+                              src="../Image/img-our-ingredients-content-2.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                        </td>
+                     </tr>
+                     <tr></tr>
+                  </tbody>
+               </table>
+            </div>
+            <!-- team member section -->
+            <h2
+               class="p-1 text-center text-capitalize mouse-gray-font font-family-Montserrat fs-1 my-3"
+               id="our-team"
+            >
+               Our Team Members
+            </h2>
+            <div class="container-fluid w75">
+               <div class="our-team">
+                  <div class="team-member-information">
+                     <div class="card" style="width: 18rem">
+                        <img
+                           src=""
+                           alt=""
+                           class="card-img-top"
+                           style="height: 29rem"
+                        />
+                        <div class="card-body">
+                           <div class="text-center text-capitalize">
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="team-member-information">
+                     <div class="card" style="width: 18rem">
+                        <img
+                           src=""
+                           alt=" "
+                           class="card-img-top"
+                           style="height: 29rem"
+                        />
+                        <div class="card-body">
+                           <div class="text-center text-capitalize">
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="team-member-information">
+                     <div class="card" style="width: 18rem">
+                        <img
+                           src=""
+                           alt=" "
+                           class="card-img-top"
+                           style="height: 29rem"
+                        />
+                        <div class="card-body">
+                           <div class="text-center text-capitalize">
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="team-member-information">
+                    <div class="card" style="width: 18rem">
+                       <img
+                          src=""
+                          alt=""
+                          class="card-img-top"
+                          style="height: 29rem"
+                       />
+                       <div class="card-body">
+                          <div class="text-center text-capitalize">
+                             
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="team-member-information">
+                    <div class="card" style="width: 18rem">
+                       <img
+                          src=""
+                          alt=" "
+                          class="card-img-top"
+                          style="height: 29rem"
+                       />
+                       <div class="card-body">
+                          <div class="text-center text-capitalize">
+                           
+                       </div>
+                    </div>
+                 </div>
+                 <div class="team-member-information">
+                    <div class="card" style="width: 18rem">
+                       <img
+                          src=""
+                          alt=" "
+                          class="card-img-top"
+                          style="height: 29rem"
+                       />
+                       <div class="card-body">
+                          <div class="text-center text-capitalize">
+                             
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-section">
+         <div class="container border-bottom border-top">
+            <ul
+               class="list-group list-group-horizontal-md d-flex justify-content-center"
+            >
+               <li class="list-group-item border-0 mx-4 my-3">
+                  <div
+                     class="phone text-center font-family text-uppercase mouse-gray-font my-5 mx-5"
+                  >
+                     <p>phone: 0934-375-531</p>
+                  </div>
+               </li>
+               <li
+                  class="list-group-item border-0 border-end border-start mx-4 my-3"
+               >
+                  <h2
+                     class="text-center text-uppercase font-family mouse-gray-font my-4 mx-4"
+                     style="font-size: 24px"
+                  >
+                     Follow us now
+                  </h2>
+                  <div
+                     class="social-link text-center d-flex justify-content-evenly"
+                  >
+                     <a
+                        class="mouse-gray-font link-dark"
+                        href="https://www.facebook.com/ "
+                        ><i class="fa-brands fa-facebook-square mx-2"></i
+                     ></a>
+                     <a
+                        class="mouse-gray-font link-dark"
+                        href="https://www.instagram.com/ "
+                        ><i class="fa-brands fa-instagram-square mx-2"></i
+                     ></a>
+                     <a
+                        class="mouse-gray-font link-dark"
+                        href="https://www.linkedin.com/in/tran-viet-179bb9218/ "
+                        ><i class="fa-brands fa-linkedin mx-2"></i
+                     ></a>
+                     <a
+                        class="mouse-gray-font link-dark"
+                        href="https://twitter.com/?lang=vi "
+                        ><i class="fa-brands fa-twitter-square mx-2"></i
+                     ></a>
+                  </div>
+               </li>
+               <li class="list-group-item border-0 mx-4 my-3">
+                  <h2
+                     class="text-center text-uppercase font-family mouse-gray-font my-4"
+                     style="font-size: 24px"
+                  >
+                     NewsLetter
+                  </h2>
+                  <form action=" ">
+                     <div class="newsletter-container">
+                        <div
+                           class="input-wrapper d-flex justify-content-center"
+                        >
+                           <input
+                              type="text"
+                              id="email"
+                              placeholder="Enter Email Address"
+                              onblur="check_email()"
+                           />
+                           <input type="hidden" name=" " />
+                           <input
+                              class="font-family text-uppercase btn btn-secondary"
+                              type="submit"
+                              value="submit"
+                           />
+                        </div>
+                        <span id="erremail" class="font-family"></span>
+                     </div>
+                  </form>
+               </li>
+            </ul>
+         </div>
+         <div class="container information my-5">
+            <ul
+               class="list-group border-0 list-group-horizontal-xl d-flex justify-content-around information-col"
+            >
+               <li class="list-group-item border-0 my-5">
+                  <h2 class="mouse-gray-font font-family-Montserrat">
+                     Services
+                  </h2>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >Contact Us</a
+                     >
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >Discovery Trio</a
+                     >
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href="">FAQ</a>
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >Privacy Policy</a
+                     >
+                  </div>
+               </li>
+               <li class="list-group-item border-0 my-5">
+                  <h2 class="mouse-gray-font font-family-Montserrat">
+                     Company
+                  </h2>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >About Us</a
+                     >
+                  </div>
+                  <div class="footer-section-item">
+                     <a
+                        class="font-family font-color rainbow"
+                        href="Sitemap.html"
+                        >Site Map</a
+                     >
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href="">Blog</a>
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >Wonder Rewards</a
+                     >
+                  </div>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color rainbow" href=""
+                        >Reviews</a
+                     >
+                  </div>
+               </li>
+               <li class="list-group-item border-0 my-5">
+                  <h2 class="mouse-gray-font font-family-Montserrat">
+                     Team Members
+                  </h2>
+                  <div class="footer-section-item "><a class="font-family font-color rainbow " href=" ">Nguyen Anh Thu</a></div>
+                    <div class="footer-section-item "><a class="font-family font-color rainbow " href=" ">Bui Ngoc Thu</a></div>
+                    <div class="footer-section-item "><a class="font-family font-color rainbow " href=" ">Tran Thi Thanh Tuyen</a></div>
+               </li>
+               <li class="list-group-item border-0 my-5">
+                  <h2 class="mouse-gray-font font-family-Montserrat">
+                     Partners
+                  </h2>
+                  <div class="footer-section-item">
+                     <a class="font-family font-color" href=""
+                        >Become An Affiliate</a
+                     >
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         <div
+            class="container-fluid w-100 d-flex justify-content-center font-family font-sz fw-bold"
+         >
+            <div class="information-left d-flex">
+               <p>&copy; Wonder, Co.All rights reserved.</p>
+               <p class="mx-4"><a href="" class="link-dark">Viet Nam</a></p>
+               <p>English</p>
+               <p class="mx-4">
+                  <a href="" class="link-dark">Terms and Conditions</a>
+               </p>
+               <p>2022</p>
+            </div>
+         </div>
+      </div>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.6.0.min.js"></script>
+      <script src="../js/micromodal.min.js"></script>
+      <script src="../js/slick.min.js"></script>
+      <script src="../js/main.js"></script>
+      <script>
+         $(document).ready(function () {
+            $(".our-team").slick({
+               autoplay: true,
+               autoplaySpeed: 2000,
+               slidesToShow: 3,
+               slidesToScroll: 1,
+               dots: false,
+               centerMode: true,
+               focusOnSelect: true,
+               easing: "ease-in-out-cubic",
+               prevArrow:
+                  "<button type='button' class='slick-prev slick-arrow pull-left'><i style = 'font-size:20px'class='ti-angle-left' aria-hidden='false'></i></button>",
+               nextArrow:
+                  "<button type='button' class='slick-next slick-arrow pull-right'><i style = 'font-size:20px' class='ti-angle-right' aria-hidden='false'></i></button>",
+               arrows: true,
+               responsive: [
+                  {
+                     breakpoint: 1024,
+                     settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrows: true,
+                     },
+                  },
+                  {
+                     breakpoint: 600,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: false,
+                     },
+                  },
+               ],
+            });
+         });
+         $(document).on("scroll", function () {
+            if ($(window).scrollTop() > 30) {
+               $("#header").addClass("header-change");
+            } else {
+               $("#header").removeClass("header-change");
+            }
+         });
+      </script>
+   </body>
+</html>

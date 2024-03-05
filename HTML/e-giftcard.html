@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E - Gift Card | Wonder</title>
+    <link rel="icon" href="../Image/logo.jpg" />
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/e-giftcard.css" />
+  </head>
+
+  <body>
+    <!-- menu -->
+    <div class="container-fluid header" id="header">
+      <div class="container-fluid text-center">
+        <div class="brand-name pb-3 fw-bold">Wonder</div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link nav-link-item mx-3">
+                  home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    all collection
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">New</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Best Seller</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Limited Edition</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Secret Garden</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Core Collection</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >gift
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="gift.html">About Gift</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="gift-card.html">Gift Card</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="e-giftcard.html">E-Gift Card</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >about us
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="OutStory.html">Our Story</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="OutStory.html#our-team">Our Team</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between user-cart-search">
+              <form class="search-form">
+                <input
+                  class=""
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="I'm searching for ..."
+                  style="margin-left: 15px"
+                />
+                <span></span>
+              </form>
+              <div class="link-wrapper">
+                <a class="rainbow border-0 mx-2" onclick="test()"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a href="Signin.html" class="user mx-2 rainbow"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+                <a class="cart mx-2 rainbow" data-micromodal-trigger="modal-1"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2
+              class="modal__title text-center font-family text-capitalize mouse-gray-font"
+              id="modal-1-title"
+            >
+              your cart
+            </h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <hr />
+          <main class="modal__content" id="modal-1-content">
+            <div class="container-fluid font-family text-dark">
+              <div
+                class="container d-flex flex-lg-row flex-column justify-content-between"
+              >
+                <img
+                  src="../products/ASH MAGNUM/Candle-Magnum_Black_Core-Ash_V1-CROP_Shad2FX1.png "
+                  alt=" "
+                  class="img-fluid"
+                  style="width: 150px"
+                />
+                <div class="infor" style="margin-top: 50px">
+                  <p>Name: LES</p>
+                  <p>Quantity: 1</p>
+                </div>
+              </div>
+              <p class="text-center">Price: $36.00</p>
+            </div>
+            <hr />
+            <p class="text-center fs-4 font-family">subtotal: $36.00</p>
+            <hr />
+          </main>
+          <footer class="modal__footer d-flex justify-content-between">
+            <a
+              href="checkout.html"
+              class="font-family text-uppercase mouse-gray-font"
+              style="border: 1px solid black"
+              ><button class="modal__btn modal__btn__effect">
+                CheckOut
+              </button></a
+            >
+            <a
+              href="Cart.html"
+              class="font-family text-uppercase mouse-gray-font hvr-grow"
+              style="border: 1px solid black"
+              ><button class="modal__btn">View Cart</button></a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- end menu -->
+    <!-- content -->
+    <div
+      class="container-fluid container-fluid-content body-content p-5 d-flex justify-content-center"
+    >
+      <div class="form text-center">
+        <h4 class="fst-italic">
+          All fields are required, unless they are marked optional
+        </h4>
+        <h1 style="font-family: Lora">Who is the gift card for?</h1>
+        <hr class="my-1" />
+        <div class="option d-flex justify-content-center">
+          <button class="option-1 mx-2" onclick="showHideForm(1)">
+            A Friend
+          </button>
+          <button class="option-2 mx-2" onclick="showHideForm(2)">
+            For Me
+          </button>
+        </div>
+        <form action=" " id="form">
+          <p>Their name</p>
+          <input type="text " class="form-control" />
+          <p class="my-2">Your name</p>
+          <input type="text " class="form-control" />
+        </form>
+        <div>
+          <button class="btn-form my-4">Send A Digital Card</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section my-5">
+      <div class="container border-bottom border-top">
+        <ul
+          class="list-group list-group-horizontal-md d-flex justify-content-center"
+        >
+          <li class="list-group-item border-0 mx-4 my-3">
+            <div
+              class="phone text-center font-family text-uppercase mouse-gray-font my-5 mx-5"
+            >
+              <p>phone: 0934-375-531</p>
+            </div>
+          </li>
+          <li
+            class="list-group-item border-0 border-end border-start mx-4 my-3"
+          >
+            <h2
+              class="text-center text-uppercase font-family mouse-gray-font my-4 mx-4"
+              style="font-size: 24px"
+            >
+              Follow us now
+            </h2>
+            <div class="social-link text-center d-flex justify-content-evenly">
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.facebook.com/ "
+                ><i class="fa-brands fa-facebook-square mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.instagram.com/ "
+                ><i class="fa-brands fa-instagram-square mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.linkedin.com/in/tran-viet-179bb9218/ "
+                ><i class="fa-brands fa-linkedin mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://twitter.com/?lang=vi "
+                ><i class="fa-brands fa-twitter-square mx-2"></i
+              ></a>
+            </div>
+          </li>
+          <li class="list-group-item border-0 mx-4 my-3">
+            <h2
+              class="text-center text-uppercase font-family mouse-gray-font my-4"
+              style="font-size: 24px"
+            >
+              NewsLetter
+            </h2>
+            <form action=" ">
+              <div class="newsletter-container">
+                <div class="input-wrapper d-flex justify-content-center">
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter Email Address"
+                    onblur="check_email()"
+                  />
+                  <input type="hidden" name=" " />
+                  <input
+                    class="font-family text-uppercase btn btn-secondary"
+                    type="submit"
+                    value="submit"
+                  />
+                </div>
+                <span id="erremail" class="font-family"></span>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="container information my-5">
+        <ul
+          class="list-group border-0 list-group-horizontal-xl d-flex justify-content-around information-col"
+        >
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Services</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="">Contact Us</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=""
+                >Discovery Trio</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="">FAQ</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=""
+                >Privacy Policy</a
+              >
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Company</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="">About Us</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="Sitemap.html"
+                >Site Map</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="">Blog</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=""
+                >Wonder Rewards</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="">Reviews</a>
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Team Members</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Nguyen Anh Thu</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Bui Ngoc Thu</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Tran Thi Thanh Tuyen</a
+              >
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Partners</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color" href="">Become An Affiliate</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="container-md w-75 d-flex justify-content-center font-family font-sz fw-bold list-infor"
+      >
+        <div class="information-left d-flex">
+          <p>&copy; Wonder, Co.All rights reserved.</p>
+          <p class="mx-4"><a href="" class="link-dark">Viet Nam</a></p>
+          <p>English</p>
+        </div>
+        <div class="information-right d-flex justify-content-around">
+          <p class="mx-4">
+            <a href="" class="link-dark">Terms and Conditions</a>
+          </p>
+          <p>2022</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/micromodal.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      $(document).on("scroll", function () {
+        if ($(window).scrollTop() > 30) {
+          $("#header").addClass("header-change");
+        } else {
+          $("#header").removeClass("header-change");
+        }
+      });
+
+      function showHideForm(id) {
+        let val = document.getElementById("form");
+        if (id == 2) {
+          val.style.display = "none";
+        } else {
+          val.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

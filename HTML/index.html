@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Wonder</title>
+    <link rel="icon" href="../Image/logo.jpg" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/slick.css" />
+    <link rel="stylesheet" href="../CSS/slick-theme.css" />
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div
+      class="container-fluid header"
+      id="header"
+      style="padding-left: 20px; padding-right: 20px"
+    >
+      <div class="container-fluid text-center">
+        <div class="brand-name pb-3 fw-bold">Wonder</div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link nav-link-item mx-3">
+                  home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    all collection
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">New</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Best Seller</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Limited Edition</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Secret Garden</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Core Collection</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >gift
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="gift.html">About Gift</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="gift-card.html">Gift Card</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="e-giftcard.html">E-Gift Card</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >about us
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="OutStory.html">Our Story</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="OutStory.html#our-team">Our Team</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between user-cart-search">
+              <form class="search-form">
+                <input
+                  class=""
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="I'm searching for ..."
+                  style="margin-left: 15px"
+                />
+                <span></span>
+              </form>
+              <div class="link-wrapper">
+                <a class="rainbow border-0 mx-2" onclick="test()"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a class="user mx-2 rainbow"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+                <a class="cart mx-2 rainbow" data-micromodal-trigger="modal-1"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2
+              class="modal__title text-center font-family text-capitalize mouse-gray-font"
+              id="modal-1-title"
+            >
+              your cart
+            </h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <hr />
+          <main class="modal__content" id="modal-1-content">
+            <div class="container-fluid font-family text-dark">
+              <div
+                class="container d-flex flex-lg-row flex-column justify-content-between"
+              >
+                <img
+                  src="../products/LES/Candle-Standard_Black_Core-LES_V1-CROP_Shad1FX1.png "
+                  alt=" "
+                  class="img-fluid"
+                  style="width: 150px"
+                />
+                <div class="infor" style="margin-top: 50px">
+                  <p>Name: LES</p>
+                  <p>Quantity: 1</p>
+                </div>
+              </div>
+              <p class="text-center">Price: $36.00</p>
+            </div>
+            <hr />
+            <p class="text-center fs-4 font-family">subtotal: $36.00</p>
+            <hr />
+          </main>
+          <footer class="modal__footer d-flex justify-content-between">
+            <a
+              href="checkout.html"
+              class="font-family text-uppercase mouse-gray-font"
+              style="border: 1px solid black"
+              ><button class="modal__btn modal__btn__effect">
+                CheckOut
+              </button></a
+            >
+            <a
+              href="Cart.html"
+              class="font-family text-uppercase mouse-gray-font hvr-grow"
+              style="border: 1px solid black"
+              ><button class="modal__btn">View Cart</button></a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!--slider-->
+    <div class="container-fluid position-relative">
+      <ul class="homepage-image-slider">
+        <li class="image-item">
+          <div class="image">
+            <a href="ShopAll.html "
+              ><img src="../Image/background-slider-1.webp " alt=" "
+            /></a>
+          </div>
+        </li>
+        <li class="image-item">
+          <div class="image">
+            <a href="ShopAll.html ">
+              <img src="../Image/background-slider-2.webp " alt=" " />
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div
+        class="homepage-image-slider-information container-fluid d-flex flex-column justify-content-end position-absolute visible white-font"
+      >
+        <h2>Dive in</h2>
+        <p>The wonderful world</p>
+        <a href="ShopAll.html " class="homepage-slider-link">
+          <button class="homepage-slider-button font-family">collection</button>
+        </a>
+      </div>
+    </div>
+    <!-- best seller item-->
+    <div class="container text-center my-4 best-seller-item-section">
+      <h2 class="tittle-name mouse-gray-font">Our Best Seller Candle</h2>
+    </div>
+    <div
+      class="container-fluid best-seller-item d-flex justify-content-between w-75 flex-lg-row flex-column align-items-center"
+    >
+      <div class="card border-0 best-seller-candle">
+        <a href="../HTML/ProductDetail.html " onclick="productDetail(1) "
+          ><img
+            src="../products/LES/Candle-Standard_Black_Core-LES_V1-CROP_Shad1FX1.png "
+            alt=" "
+            class="img-fluid hvr-grow"
+        /></a>
+        <div class="card-body">
+          <p class="text-center font-family my-3">
+            Suddenly the spring came to your house
+          </p>
+          <p class="text-center font-family fw-bold">LES</p>
+        </div>
+      </div>
+      <div class="best-seller-item-img best-seller-img">
+        <img src="../Image/best-seller-item.webp " alt=" " class="img-fluid" />
+      </div>
+    </div>
+    <!--Banner-->
+
+    <div class="container text-center my-5 banner-section">
+      <h2
+        class="tittle-name mouse-gray-font"
+        style="margin: 50px auto !important"
+      >
+        Design Your Own World
+      </h2>
+      <a class="collection-link" href="ShopAll.html ">Explore Our Collection</a>
+    </div>
+    <div class="container-fluid my-5 pe-5 ps-5 homepage-banner banner-section">
+      <div class="img">
+        <img src="../Image/banner3.jpg " alt=" " class="img-fluid" />
+      </div>
+    </div>
+    <!-- core product -->
+    <div class="core-product my-5 d-flex justify-content-start">
+      <div class="container">
+        <ul class="homepage-list-item font-family">
+          <li>
+            <div class="card border-0 hvr-grow">
+              <a href="ProductDetail.html " onclick="productDetail(11) "
+                ><img
+                  src="../products/NEOPÊCHE/Candle-Standard_Hyper-Neopeche_V1-Crop_Shad1FX4.png "
+                  alt=" "
+                  class="img-fluid"
+              /></a>
+              <div class="card-body">
+                <p class="text-start fw-bold text-uppercase">Neopêche</p>
+                <div class="d-flex justify-content-between product-content">
+                  <p>$44.00</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card border-0 hvr-grow">
+              <a href="ProductDetail.html " onclick="productDetail(9) "
+                ><img
+                  src="../products/ITALIAN KUSH/Candle-Standard_Black_Kush-Italian_V1-CROP_Shad1FX1.png "
+                  alt=" "
+                  class="img-fluid"
+              /></a>
+              <div class="card-body">
+                <p class="text-start fw-bold text-uppercase">Italian Kush</p>
+                <div class="d-flex justify-content-between product-content">
+                  <p>$40.00</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card border-0 hvr-grow">
+              <a href="ProductDetail.html " onclick="productDetail(6) "
+                ><img
+                  src="../products/DAMASQUE (LIMITED)/Candle-Standard_Spring-Damasque_ScreenedLabel1_V1-CROP1_Shad1FX1.png "
+                  alt=" "
+                  class="img-fluid"
+              /></a>
+              <div class="card-body">
+                <p class="text-start fw-bold text-uppercase">DAMASQUE</p>
+                <div class="d-flex justify-content-between product-content">
+                  <p>$52.00</p>
+                  <p>Limited Edition</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card border-0 hvr-grow">
+              <a href="ProductDetail.html " onclick="productDetail(16) "
+                ><img
+                  src="../products/SLOW BURN/Candle-Standard_Other-SlowBurn_V2-CROP_Shad1FX3.png "
+                  alt=" "
+                  class="img-fluid"
+              /></a>
+              <div class="card-body">
+                <p class="text-start fw-bold text-uppercase">Slow burn</p>
+                <div class="d-flex justify-content-between product-content">
+                  <p>$48.00</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card border-0 hvr-grow">
+              <a href="ProductDetail.html " onclick="productDetail(5) "
+                ><img
+                  src="../products/COWBOY KUSH/Candle-Standard_Black_Kush-Cowboy_V1-CROP_Shad1FX1.png "
+                  alt=" "
+                  class="img-fluid"
+              /></a>
+              <div class="card-body">
+                <p class="text-start fw-bold text-uppercase">cowboy kush</p>
+                <div class="d-flex justify-content-between product-content">
+                  <p>$36.00</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner 2 -->
+    <div class="container text-center my-5 our-story-section">
+      <h2 class="tittle-name mouse-gray-font">
+        "We Started A Fire That Just Won 't Quit"
+      </h2>
+    </div>
+    <div
+      class="container-fluid banner-our-story w-75 our-story-section"
+      style="height: 720px"
+    >
+      <div
+        class="container border-bottom border-top our-story-container w-100"
+        style="margin: auto 0"
+      >
+        <div class="text-center my-3" style="margin-top: 50px">
+          <h2>WONDER Story</h2>
+          <p>
+            Have you ever wondered about the details that go into candle
+            manufacturing and distrubution? Have you ever wondered what the
+            difference is between soy and parafin wax? What about the purity of
+            ingredients of the hand cream and liquid soap you’re using?
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-center my-5">
+        <a href="OutStory.html"
+          ><button class="our-story-button" type="submit">
+            Read Our Story
+          </button></a
+        >
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-section">
+      <div class="container border-bottom border-top">
+        <ul
+          class="list-group list-group-horizontal-md d-flex justify-content-center"
+        >
+          <li class="list-group-item border-0 mx-4 my-3">
+            <div
+              class="phone text-center font-family text-uppercase mouse-gray-font my-5 mx-5"
+            >
+              <p>phone: 0934-375-531</p>
+            </div>
+          </li>
+          <li
+            class="list-group-item border-0 border-end border-start mx-4 my-3"
+          >
+            <h2
+              class="text-center text-uppercase font-family mouse-gray-font my-4 mx-4"
+              style="font-size: 24px"
+            >
+              Follow us now
+            </h2>
+            <div class="social-link text-center d-flex justify-content-evenly">
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.facebook.com/ "
+                ><i class="fa-brands fa-facebook-square mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.instagram.com/ "
+                ><i class="fa-brands fa-instagram-square mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://www.linkedin.com/in/tran-viet-179bb9218/ "
+                ><i class="fa-brands fa-linkedin mx-2"></i
+              ></a>
+              <a
+                class="mouse-gray-font link-dark"
+                href="https://twitter.com/?lang=vi "
+                ><i class="fa-brands fa-twitter-square mx-2"></i
+              ></a>
+            </div>
+          </li>
+          <li class="list-group-item border-0 mx-4 my-3">
+            <h2
+              class="text-center text-uppercase font-family mouse-gray-font my-4"
+              style="font-size: 24px"
+            >
+              NewsLetter
+            </h2>
+            <form action=" ">
+              <div class="newsletter-container">
+                <div class="input-wrapper d-flex justify-content-center">
+                  <input
+                    type="text"
+                    id="email "
+                    placeholder="Enter Email Address "
+                    onblur="check_email() "
+                  />
+                  <input type="hidden" name=" " />
+                  <input
+                    class="font-family text-uppercase btn btn-secondary"
+                    type="submit"
+                    value="submit "
+                  />
+                </div>
+                <span id="erremail " class="font-family"></span>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="container information my-5">
+        <ul
+          class="list-group border-0 list-group-horizontal-xl d-flex justify-content-around information-col"
+        >
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Services</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" ">Contact Us</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Discovery Trio</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" ">FAQ</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Privacy Policy</a
+              >
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Company</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" ">About Us</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href="Sitemap.html"
+                >Site Map</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" ">Blog</a>
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Wonder Rewards</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" ">Reviews</a>
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Team Members</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Nguyen Anh Thu</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Bui Ngoc Thu</a
+              >
+            </div>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Tran Thi Thanh Tuyen</a
+              >
+            </div>
+          </li>
+          <li class="list-group-item border-0 my-5">
+            <h2 class="mouse-gray-font font-family-Montserrat">Partners</h2>
+            <div class="footer-section-item">
+              <a class="font-family font-color rainbow" href=" "
+                >Become An Affiliate</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="container-fluid w-100 d-flex justify-content-center font-family font-sz fw-bold"
+      >
+        <div class="information-left d-flex">
+          <p>&copy; Wonder, Co.All rights reserved.</p>
+          <p class="mx-4"><a href=" " class="link-dark">Viet Nam</a></p>
+          <p>English</p>
+          <p class="mx-4">
+            <a href=" " class="link-dark">Terms and Conditions</a>
+          </p>
+          <p>2022</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js "></script>
+    <script src="../js/scrollReveal.js"></script>
+    <script>
+      ScrollReveal({
+        distance: "120px",
+        duration: 1000,
+      });
+      ScrollReveal().reveal(".homepage-image-slider-information", {
+        delay: 1600,
+        origin: "left",
+        easing: "ease-in-out",
+      });
+    </script>
+    <script src="../js/bootstrap.bundle.min.js "></script>
+    <script
+      type="text/javascript "
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "
+    ></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/micromodal.min.js"></script>
+    <script src="../js/all-product.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap | Wonder</title>
+    <link rel="icon" href="../Image/logo.jpg" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/slick.css" />
+    <link rel="stylesheet" href="../CSS/slick-theme.css" />
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../icon/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      .mouse-gray-font {
+        color: #6c6e6b !important;
+      }
+
+      .font-color {
+        color: #1c1b1b;
+      }
+
+      .font-family-Montserrat {
+        font-family: Montserrat;
+      }
+
+      .font-family {
+        font-family: Lora;
+      }
+
+      .font-family-futura {
+        font-family: futura;
+      }
+
+      .font-sz {
+        font-size: 13px;
+      }
+
+      .white-font {
+        color: #fff;
+      }
+
+      .visible {
+        visibility: hidden;
+      }
+
+      @font-face {
+        font-family: town_50_extra;
+        src: url("../Font/town-50-chic-extra-thin.otf");
+      }
+
+      @font-face {
+        font-family: futura;
+        src: url("../Font/futura-pt-book.otf");
+      }
+
+      @font-face {
+        font-family: Montserrat;
+        src: url("../Font/Metropolis-ExtraLight.otf");
+      }
+
+      @font-face {
+        font-family: Metropolis;
+        src: url("../Font/Metropolis-ExtraLight.otf");
+      }
+
+      @font-face {
+        font-family: Lora;
+        src: url("../Font/Lora-Regular.ttf");
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: left;
+        }
+        50% {
+          background-position: right;
+        }
+        100% {
+          background-position: left;
+        }
+      }
+
+      .hvr-grow {
+        display: block;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+
+      .hvr-grow:hover,
+      .hvr-grow:focus,
+      .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .rainbow {
+        font-family: Lora;
+        color: #1c1b1b;
+        text-decoration: none;
+        background: linear-gradient(to right, crimson, pink, springgreen);
+        background-size: 200% 200%;
+        animation: rainbow 2s ease-in-out infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 1);
+        display: inline-block;
+        text-align: center;
+        transition: color 0.2s ease-in-out;
+      }
+
+      .rainbow:hover {
+        color: rgba(0, 0, 0, 0);
+      }
+      /* header */
+
+      .header {
+        position: absolute;
+        z-index: 5;
+        transition: background-color 0.3s ease;
+      }
+
+      .header-change {
+        background-color: #f7f7f7 !important;
+        box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1) !important;
+        position: fixed !important;
+        top: 0 !important;
+      }
+
+      .brand-name {
+        height: 20px;
+        font-family: town_50_extra;
+        font-size: 40px;
+        font-weight: 500;
+      }
+
+      .nav-link-item {
+        color: #000 !important;
+        font-family: Lora;
+        text-transform: capitalize;
+      }
+
+      .nav-link-item:hover {
+        color: #000;
+        font-weight: bold;
+      }
+
+      .nav-link-item {
+        position: relative;
+        height: 100%;
+      }
+
+      .nav-link-item::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transform-origin: center;
+        transform: translate(-50%, 0) scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .nav-link-item:hover::before {
+        transform: translate(-50%, 0) scaleX(1);
+      }
+
+      @media (hover: hover) {
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+
+      .dropdown-menu {
+        margin-top: 40px;
+        border-radius: 0 !important;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .dropdown-toggle::after {
+        display: none;
+      }
+
+      .dropdown-menu {
+        border: none;
+      }
+
+      .dropdown-menu a {
+        font-family: Lora !important;
+        font-weight: 400 !important;
+        text-decoration: none;
+        color: #000 !important;
+      }
+
+      .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .dropdown-item {
+        position: relative;
+        z-index: 1;
+      }
+
+      .dropdown-item::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: #f7f7f7;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .dropdown-item:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
+
+      .search-form input {
+        width: 12em;
+        color: #000;
+        font-size: inherit;
+        font-family: inherit;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding-top: 0;
+      }
+
+      .search-form input[type="text"]:focus {
+        outline: none;
+      }
+
+      .search-form {
+        position: relative;
+      }
+
+      .search-form span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #2b2c2a;
+        transform-origin: bottom right;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .search-form input:focus ~ span {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+
+      .user-cart-search a {
+        color: #000;
+      }
+
+      .btn-search {
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      .link-wrapper a {
+        font-size: 18px;
+      }
+
+      ::placeholder {
+        color: #000;
+      }
+      /* modal cart */
+
+      .modal {
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+          helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
+          sans-serif;
+      }
+
+      .modal__overlay {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal__container {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        background-color: #f4f4f4;
+        padding: 30px;
+        max-width: 500px;
+        border-radius: 0;
+        overflow-y: auto;
+        box-sizing: border-box;
+      }
+
+      .modal__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .modal__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        color: #00449e;
+        box-sizing: border-box;
+      }
+
+      .modal__close {
+        background: transparent;
+        border: 0;
+      }
+
+      .modal__header .modal__close:before {
+        content: "\2715";
+      }
+
+      .modal__content {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal__btn {
+        background-color: transparent;
+        font-size: 0.875rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: antiquewhite;
+        color: rgba(0, 0, 0, 0.8);
+        border-radius: 0 !important;
+        border-style: none;
+        border-width: 0;
+        cursor: pointer;
+        -webkit-appearance: button;
+        text-transform: none;
+        overflow: visible;
+        line-height: 1.15;
+        margin: 0;
+        will-change: transform;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        transition: -webkit-transform 0.25s ease-out;
+        transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+      }
+
+      .modal__btn__effect:focus,
+      .modal__btn__effect:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+      @keyframes mmfadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes mmfadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes mmslideIn {
+        from {
+          transform: translateY(15%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes mmslideOut {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-10%);
+        }
+      }
+
+      .micromodal-slide {
+        display: none;
+      }
+
+      .micromodal-slide.is-open {
+        display: block;
+      }
+
+      .micromodal-slide[aria-hidden="false"] .modal__overlay {
+        animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+      }
+
+      .micromodal-slide[aria-hidden="false"] .modal__container {
+        animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+      }
+
+      .micromodal-slide[aria-hidden="true"] .modal__overlay {
+        animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+      }
+
+      .micromodal-slide[aria-hidden="true"] .modal__container {
+        animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+      }
+
+      .micromodal-slide .modal__container,
+      .micromodal-slide .modal__overlay {
+        will-change: transform;
+      }
+      /* body */
+
+      .body {
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 0 0 15px 0 grey;
+      }
+
+      .body .nav-link {
+        color: black;
+      }
+
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        background-color: black;
+      }
+
+      .accordion-button:focus {
+        box-shadow: none;
+        border: 1px solid black;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: white;
+      }
+
+      .home .col-12 {
+        padding: 10px !important;
+      }
+
+      .home a {
+        text-decoration: none;
+        color: black;
+        font-family: futura;
+      }
+
+      .home li {
+        list-style: none;
+        padding: 10px;
+      }
+
+      .account .col:first-child {
+        border-right: 1px solid black;
+      }
+
+      .account a {
+        text-decoration: none;
+        color: black;
+        font-family: futura;
+      }
+      /* body */
+
+      .container {
+        margin-top: 100px;
+      }
+
+      button {
+        font-family: Lora;
+      }
+
+      .footer-section a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid header" id="header">
+      <div class="container-fluid text-center">
+        <div class="brand-name pb-3 fw-bold">Wonder</div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link nav-link-item mx-3">
+                  home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    all collection
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">New</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Best Seller</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Limited Edition</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Secret Garden</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="ShopAll.html">Core Collection</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >gift
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="gift.html">About Gift</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="gift-card.html">Gift Card</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="e-giftcard.html">E-Gift Card</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a
+                    href=""
+                    class="nav-link nav-link-item mx-3 dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >about us
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu row" id="sub-menu">
+                    <div class="dropdown-item">
+                      <a href="OutStory.html">Our Story</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="OurTeam.html">Our Team</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between user-cart-search">
+              <form class="search-form">
+                <input
+                  class=""
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="I'm searching for ..."
+                  style="margin-left: 15px"
+                />
+                <span></span>
+              </form>
+              <div class="link-wrapper">
+                <a class="rainbow border-0 mx-2" onclick="test()"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a href="Signin.html" class="user mx-2 rainbow"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+                <a class="cart mx-2 rainbow" data-micromodal-trigger="modal-1"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2
+              class="modal__title text-center font-family text-capitalize mouse-gray-font"
+              id="modal-1-title"
+            >
+              your cart
+            </h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <hr />
+          <main class="modal__content" id="modal-1-content">
+            <div class="container-fluid font-family text-dark">
+              <div
+                class="container d-flex flex-lg-row flex-column justify-content-between"
+              >
+                <img
+                  src="../products/ASH MAGNUM/Candle-Magnum_Black_Core-Ash_V1-CROP_Shad2FX1.png "
+                  alt=" "
+                  class="img-fluid"
+                  style="width: 150px"
+                />
+                <div class="infor" style="margin-top: 50px">
+                  <p>Name: LES</p>
+                  <p>Quantity: 1</p>
+                </div>
+              </div>
+              <p class="text-center">Price: $36</p>
+            </div>
+            <hr />
+            <p class="text-center fs-4 font-family">subtotal: $44</p>
+            <hr />
+          </main>
+          <footer class="modal__footer d-flex justify-content-between">
+            <a
+              href="checkout.html"
+              class="font-family text-uppercase mouse-gray-font"
+              style="border: 1px solid black"
+              ><button class="modal__btn modal__btn__effect">
+                CheckOut
+              </button></a
+            >
+            <a
+              href="Cart.html"
+              class="font-family text-uppercase mouse-gray-font hvr-grow"
+              style="border: 1px solid black"
+              ><button class="modal__btn">View Cart</button></a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <img class="img-fluid" src="../Image/bg-sitemap.webp" alt="" />
+    <div class="container body">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Home
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <div class="d-flex align-items-start">
+                <div
+                  class="nav flex-column nav-pills me-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home"
+                    aria-selected="true"
+                  >
+                    Home
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-collection-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-collection"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-collection"
+                    aria-selected="false"
+                  >
+                    All Collection
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-gift-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-gift"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-gift"
+                    aria-selected="false"
+                  >
+                    Gift
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-about-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-about"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-about"
+                    aria-selected="false"
+                  >
+                    About Us
+                  </button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="v-pills-home"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-home-tab"
+                  >
+                    <div class="home p-5">
+                      <a href="../HTML/index.html"> Homepage </a>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-collection"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-collection-tab"
+                  >
+                    <ul class="row home">
+                      <li><a href="../HTML/ShopAll.html">New</a></li>
+                      <li>
+                        <a href="../HTML/ShopAll.html">Best Seller</a>
+                      </li>
+                      <li>
+                        <a href="../HTML/ShopAll.html">Limited Edition</a>
+                      </li>
+                      <li>
+                        <a href="../HTML/ShopAll.html">Secret Garden</a>
+                      </li>
+                      <li>
+                        <a href="../HTML/ShopAll.html">Core Collection</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-gift"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-gift-tab"
+                  >
+                    <div class="row home p-5">
+                      <div class="col-12">
+                        <a href="../HTML/gift-card.html">Gift Card</a>
+                      </div>
+                      <div class="col-12">
+                        <a href="../HTML/e-giftcard.html">E - Gift Card</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-about"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-about-tab"
+                  >
+                    <div class="row home p-5">
+                      <div class="col-12">
+                        <a href="../HTML/OutStory.html">Our Story</a>
+                      </div>
+                      <div class="col-12">
+                        <a href="../HTML/OurTeam.html">Our Team</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Cart
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              second item's accordion body. Let's imagine this being filled with
+              some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Products
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <div class="row account text-center">
+                <div class="col">
+                  <a href="../HTML/ShopAll.html">All Products</a>
+                </div>
+                <div class="col">
+                  <a href="../HTML/ProductDetail.html">Products Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Accounts
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <div class="row account text-center">
+                <div class="col">
+                  <a href="../HTML/Signin.html">Sign in</a>
+                </div>
+                <div class="col">
+                  <a href="../HTML/Signup.html">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-section">
+        <div class="container border-bottom border-top">
+          <ul
+            class="list-group list-group-horizontal-md d-flex justify-content-center"
+          >
+            <li class="list-group-item border-0 mx-4 my-3">
+              <div
+                class="phone text-center font-family text-uppercase mouse-gray-font my-5 mx-5"
+              >
+                <p>phone: 0934-375-531</p>
+              </div>
+            </li>
+            <li
+              class="list-group-item border-0 border-end border-start mx-4 my-3"
+            >
+              <h2
+                class="text-center text-uppercase font-family mouse-gray-font my-4 mx-4"
+                style="font-size: 24px"
+              >
+                Follow us now
+              </h2>
+              <div
+                class="social-link text-center d-flex justify-content-evenly"
+              >
+                <a
+                  class="mouse-gray-font link-dark"
+                  href="https://www.facebook.com/ "
+                  ><i class="fa-brands fa-facebook-square mx-2"></i
+                ></a>
+                <a
+                  class="mouse-gray-font link-dark"
+                  href="https://www.instagram.com/ "
+                  ><i class="fa-brands fa-instagram-square mx-2"></i
+                ></a>
+                <a
+                  class="mouse-gray-font link-dark"
+                  href="https://www.linkedin.com/in/tran-viet-179bb9218/ "
+                  ><i class="fa-brands fa-linkedin mx-2"></i
+                ></a>
+                <a
+                  class="mouse-gray-font link-dark"
+                  href="https://twitter.com/?lang=vi "
+                  ><i class="fa-brands fa-twitter-square mx-2"></i
+                ></a>
+              </div>
+            </li>
+            <li class="list-group-item border-0 mx-4 my-3">
+              <h2
+                class="text-center text-uppercase font-family mouse-gray-font my-4"
+                style="font-size: 24px"
+              >
+                NewsLetter
+              </h2>
+              <form action=" ">
+                <div class="newsletter-container">
+                  <div class="input-wrapper d-flex justify-content-center">
+                    <input
+                      type="text"
+                      id="email"
+                      placeholder="Enter Email Address"
+                      onblur="check_email()"
+                    />
+                    <input type="hidden" name=" " />
+                    <input
+                      class="font-family text-uppercase btn btn-secondary"
+                      type="submit"
+                      value="submit"
+                    />
+                  </div>
+                  <span id="erremail" class="font-family"></span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="container information my-5">
+          <ul
+            class="list-group border-0 list-group-horizontal-xl d-flex justify-content-around information-col"
+          >
+            <li class="list-group-item border-0 my-5">
+              <h2 class="mouse-gray-font font-family-Montserrat">Services</h2>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="">Contact Us</a>
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Discovery Trio</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="">FAQ</a>
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Privacy Policy</a
+                >
+              </div>
+            </li>
+            <li class="list-group-item border-0 my-5">
+              <h2 class="mouse-gray-font font-family-Montserrat">Company</h2>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="OutStory.html"
+                  >About Us</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="Sitemap.html"
+                  >Site Map</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="">Blog</a>
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Wonder Rewards</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href="">Reviews</a>
+              </div>
+            </li>
+            <li class="list-group-item border-0 my-5">
+              <h2 class="mouse-gray-font font-family-Montserrat">
+                Team Members
+              </h2>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Tran Hoang Viet</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Nguyen Anh Thu</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Ho Yen Ngoc</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Tran Hoai Bao</a
+                >
+              </div>
+              <div class="footer-section-item">
+                <a class="font-family font-color rainbow" href=""
+                  >Pham Ba Bac</a
+                >
+              </div>
+            </li>
+            <li class="list-group-item border-0 my-5">
+              <h2 class="mouse-gray-font font-family-Montserrat">Partners</h2>
+              <div class="footer-section-item">
+                <a class="font-family font-color" href=""
+                  >Become An Affiliate</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="container-md w-75 d-flex justify-content-center font-family font-sz fw-bold list-infor"
+        >
+          <div class="information-left d-flex">
+            <p>&copy; Wonder, Co.All rights reserved.</p>
+            <p class="mx-4"><a href="" class="link-dark">Viet Nam</a></p>
+            <p>English</p>
+          </div>
+          <div class="information-right d-flex justify-content-around">
+            <p class="mx-4">
+              <a href="" class="link-dark">Terms and Conditions</a>
+            </p>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/micromodal.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      $(document).on("scroll", function () {
+        if ($(window).scrollTop() > 30) {
+          $("#header").addClass("header-change");
+        } else {
+          $("#header").removeClass("header-change");
+        }
+      });
+    </script>
+  </body>
+</html>
